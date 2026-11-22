@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ホームページの試し</title>
+<style>
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#e5e5ea;--accent:#0071e3;--soft:#f5f5f7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.7}
+.wrap{max-width:960px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-block:16px}
+.logo{font-weight:700;letter-spacing:.04em}
+nav{display:flex;gap:20px;color:var(--sub);font-size:14px}
+.hero{padding-block:72px 56px;text-align:center}
+h1{font-size:clamp(28px,6vw,48px);line-height:1.25;margin:0 0 16px;text-wrap:balance}
+.lead{color:var(--sub);max-width:34em;margin:0 auto 28px}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:12px 28px;border-radius:999px;font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;padding-block:8px 64px}
+.card{background:var(--soft);border-radius:18px;padding:24px}
+.card h2{font-size:18px;margin:0 0 8px}
+.card p{margin:0;color:var(--sub);font-size:15px}
+footer{border-top:1px solid var(--line);color:var(--sub);font-size:13px}
+footer .wrap{padding-block:20px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="logo">SAMPLE</div><nav><span>ごあいさつ</span><span>ご案内</span><span>お問い合わせ</span></nav></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<h1>ここに、いちばん伝えたい一言が入ります</h1>
+<p class="lead">これは置き場の試しのページです。中身は仮のもので、何のページにするかが決まったら文章と写真を入れ替えます。</p>
+<a class="btn" href="#info">ご案内を見る</a>
+</div></section>
+<section id="info"><div class="wrap cards">
+<div class="card"><h2>枠 1</h2><p>特長や強みを書く場所です。</p></div>
+<div class="card"><h2>枠 2</h2><p>料金や流れを書く場所です。</p></div>
+<div class="card"><h2>枠 3</h2><p>場所や連絡先を書く場所です。</p></div>
+</div></section>
+</main>
+<footer><div class="wrap">試しのページ（検索には出ない設定）</div></footer>
+</body>
+</html>
