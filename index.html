@@ -4,42 +4,195 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>ホームページの試し</title>
+<title>TAKARA｜四谷三丁目のパーソナルトレーナー</title>
 <style>
-:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#e5e5ea;--accent:#0071e3;--soft:#f5f5f7}
+:root{--bg:#fff;--fg:#1d1d1f;--sub:#6e6e73;--line:#e5e5ea;--soft:#f5f5f7;--accent:#0071e3;--ink:#111}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.7}
-.wrap{max-width:960px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
-header{border-bottom:1px solid var(--line)}
-header .wrap{display:flex;justify-content:space-between;align-items:center;padding-block:16px}
-.logo{font-weight:700;letter-spacing:.04em}
-nav{display:flex;gap:20px;color:var(--sub);font-size:14px}
-.hero{padding-block:72px 56px;text-align:center}
-h1{font-size:clamp(28px,6vw,48px);line-height:1.25;margin:0 0 16px;text-wrap:balance}
-.lead{color:var(--sub);max-width:34em;margin:0 auto 28px}
-.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:12px 28px;border-radius:999px;font-weight:600}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;padding-block:8px 64px}
-.card{background:var(--soft);border-radius:18px;padding:24px}
-.card h2{font-size:18px;margin:0 0 8px}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);line-height:1.8;
+font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;
+-webkit-font-smoothing:antialiased}
+.wrap{max-width:920px;margin:0 auto;
+padding-left:max(20px,env(safe-area-inset-left,0px));
+padding-right:max(20px,env(safe-area-inset-right,0px))}
+header{position:sticky;top:0;background:rgba(255,255,255,.92);
+backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-block:12px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.08em}
+.mark{width:32px;height:32px;border:1.5px solid var(--ink);border-radius:50%;
+display:grid;place-items:center;font-weight:800;font-size:15px;letter-spacing:0}
+nav{display:flex;gap:18px;font-size:13px}
+nav a{color:var(--sub);text-decoration:none;padding-block:10px}
+section{padding-block:64px}
+.hero{padding-block:88px 72px}
+.eyebrow{font-size:13px;color:var(--sub);letter-spacing:.12em;margin:0 0 18px}
+h1{font-size:clamp(30px,7.4vw,56px);line-height:1.3;margin:0 0 22px;letter-spacing:.01em;text-wrap:balance}
+h2{font-size:clamp(22px,4.6vw,30px);line-height:1.4;margin:0 0 8px;text-wrap:balance}
+.sec-lead{color:var(--sub);margin:0 0 28px;max-width:34em}
+.lead{font-size:17px;color:var(--sub);max-width:32em;margin:0 0 32px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;
+border-radius:999px;font-weight:600;text-decoration:none;font-size:15px}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.ghost{background:var(--soft);color:var(--fg)}
+.band{background:var(--soft)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px}
+.band .card{border-color:transparent}
+.card h3{font-size:17px;margin:0 0 8px;line-height:1.5}
 .card p{margin:0;color:var(--sub);font-size:15px}
+.tag{display:inline-block;font-size:12px;color:var(--sub);letter-spacing:.1em;margin-bottom:10px}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.quote{border-top:2px solid var(--ink);padding-top:18px}
+.quote b{display:block;font-size:18px;line-height:1.5;margin-bottom:8px;text-wrap:balance}
+.quote p{margin:0;color:var(--sub);font-size:15px}
+ol.flow{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+ol.flow li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;
+background:#fff;border-radius:18px;padding:20px}
+.num{width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;
+display:grid;place-items:center;font-weight:700}
+ol.flow h3{margin:6px 0 4px;font-size:17px}
+ol.flow p{margin:0;color:var(--sub);font-size:15px}
+.apply{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;align-items:start}
+pre.dm{margin:0;background:var(--soft);border-radius:16px;padding:20px;font:inherit;font-size:16px;
+line-height:2;white-space:pre-wrap}
+.copy{margin-top:12px;min-height:44px;padding:0 20px;border-radius:999px;border:1px solid var(--line);
+background:#fff;font:inherit;font-size:14px;font-weight:600;color:var(--fg)}
+.note{font-size:13px;color:var(--sub);margin:14px 0 0}
+dl.info{margin:0;display:grid;gap:0}
+dl.info div{display:grid;grid-template-columns:7em 1fr;gap:12px;padding-block:14px;border-bottom:1px solid var(--line)}
+dl.info dt{color:var(--sub);font-size:14px}
+dl.info dd{margin:0}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+a.link{display:block;text-decoration:none;color:inherit}
+a.link .card{height:100%}
+a.link span{color:var(--accent);font-size:14px;font-weight:600}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+@media (min-width:860px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:48px}}
+.ph{display:block;width:100%;height:auto;border-radius:20px;background:var(--soft)}
+.hero .ph{aspect-ratio:3/2;object-fit:cover}
+.card.pic{padding:0;overflow:hidden}
+.card.pic .ph{border-radius:0;aspect-ratio:3/2;object-fit:cover}
+.card.pic .in{padding:22px 26px 26px}
+.banner{margin:0 0 20px}
+.banner .ph{aspect-ratio:16/9;object-fit:cover}
 footer{border-top:1px solid var(--line);color:var(--sub);font-size:13px}
-footer .wrap{padding-block:20px}
+footer .wrap{padding-block:24px}
+@media (max-width:560px){nav{gap:14px;font-size:12px}section{padding-block:48px}.hero{padding-block:56px 48px}}
 </style>
 </head>
 <body>
-<header><div class="wrap"><div class="logo">SAMPLE</div><nav><span>ごあいさつ</span><span>ご案内</span><span>お問い合わせ</span></nav></div></header>
+<header><div class="wrap">
+<div class="brand"><span class="mark">T</span>TAKARA</div>
+<nav><a href="#about">自己紹介</a><a href="#flow">体験の流れ</a><a href="#apply">申込み</a></nav>
+</div></header>
+
 <main>
-<section class="hero"><div class="wrap">
-<h1>ここに、いちばん伝えたい一言が入ります</h1>
-<p class="lead">これは置き場の試しのページです。中身は仮のもので、何のページにするかが決まったら文章と写真を入れ替えます。</p>
-<a class="btn" href="#info">ご案内を見る</a>
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<p class="eyebrow">DEED 四谷三丁目店　パーソナルトレーナー</p>
+<h1>追い込むより、<br>続く形を一緒に探す。</h1>
+<p class="lead">トレーナーの仕事は、追い込むことより、続く形を一緒に探すことだと思っています。まずは話を聞くところから始めます。</p>
+<div class="btns">
+<a class="btn primary" href="#apply">体験を申し込む</a>
+<a class="btn ghost" href="#flow">体験の流れを見る</a>
+</div>
+</div>
+<img class="ph" src="img/hero.jpg" width="1400" height="933" alt="窓ぎわにダンベルが並ぶ、静かなトレーニングの部屋">
 </div></section>
-<section id="info"><div class="wrap cards">
-<div class="card"><h2>枠 1</h2><p>特長や強みを書く場所です。</p></div>
-<div class="card"><h2>枠 2</h2><p>料金や流れを書く場所です。</p></div>
-<div class="card"><h2>枠 3</h2><p>場所や連絡先を書く場所です。</p></div>
+
+<section id="about" class="band"><div class="wrap">
+<h2>自己紹介</h2>
+<p class="sec-lead">TAKARA です。2つの仕事をしています。</p>
+<div class="two">
+<div class="card pic"><img class="ph" src="img/hands.jpg" width="1400" height="933" alt="バーベルの留め具を締める手元">
+<div class="in"><span class="tag">TRAINER</span>
+<h3>パーソナルトレーナー</h3>
+<p>DEED 四谷三丁目店で、マンツーマンのトレーニングを担当しています。</p></div></div>
+<div class="card pic"><img class="ph" src="img/desk.jpg" width="1400" height="933" alt="窓ぎわの机に置いたノートパソコンとノート">
+<div class="in"><span class="tag">AI</span>
+<h3>AI社員を雇って、発信の事業</h3>
+<p>AI社員（秘書・編集・分析）を雇っています。AIに任せた失敗と直し方を、自分で測った数字で書いています。</p></div></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>大事にしていること</h2>
+<p class="sec-lead">ふだん発信している言葉から、3つ。</p>
+<div class="quotes">
+<div class="quote"><b>頑張った日より、休まなかった週。</b>
+<p>10分でもゼロにしない。それで十分です。</p></div>
+<div class="quote"><b>完璧な1週間より、70点の3か月。</b>
+<p>できなかった日は気にしないでください。</p></div>
+<div class="quote"><b>止まった週こそ、やめない。</b>
+<p>停滞は、うまくいっている途中でもよく起きます。</p></div>
+</div>
+</div></section>
+
+<section id="flow" class="band"><div class="wrap">
+<h2>体験の流れ</h2>
+<p class="sec-lead">申込みから当日まで、5つの段階です。</p>
+<div class="banner"><img class="ph" src="img/items.jpg" width="1400" height="933" alt="ベンチに置いた運動靴とタオルと水筒"></div>
+<ol class="flow">
+<li><span class="num">1</span><div><h3>申込み</h3>
+<p>Instagram の DM に「体験希望です」と、名前・電話番号・希望日の4行を送るだけ。フォームはありません。</p></div></li>
+<li><span class="num">2</span><div><h3>返信</h3>
+<p>24時間以内に返事をします。気になっていることを、1つだけ聞きます。</p></div></li>
+<li><span class="num">3</span><div><h3>日程</h3>
+<p>候補を3つ出します。決まったら、場所と持ち物を送ります。</p></div></li>
+<li><span class="num">4</span><div><h3>当日</h3>
+<p>まず話を聞いてから、体を動かします。持ち物は運動着とタオル、飲み物です。</p></div></li>
+<li><span class="num">5</span><div><h3>その後</h3>
+<p>続けるかは、その場で決めなくて大丈夫です。合わなければ、それで終わりです。</p></div></li>
+</ol>
+</div></section>
+
+<section id="apply"><div class="wrap">
+<h2>体験の申込み</h2>
+<p class="sec-lead">窓口は Instagram の DM ひとつです。下の4行を送ってください。</p>
+<div class="apply">
+<div>
+<pre class="dm" id="dm">体験希望です
+お名前：
+電話番号：
+希望日：</pre>
+<button class="copy" id="copy" type="button">4行をコピーする</button>
+<p class="note">無理に続ける話はしません。気軽に送ってください。</p>
+</div>
+<div>
+<a class="btn primary" href="https://www.instagram.com/takara.0710/" rel="noopener">Instagram を開く（@takara.0710）</a>
+<dl class="info" style="margin-top:20px">
+<div><dt>場所</dt><dd>DEED 四谷三丁目店</dd></div>
+<div><dt>くわしい場所</dt><dd>日程が決まったらお送りします</dd></div>
+<div><dt>持ち物</dt><dd>運動着・タオル・飲み物</dd></div>
+</dl>
+</div>
+</div>
+</div></section>
+
+<section class="band"><div class="wrap">
+<h2>発信</h2>
+<p class="sec-lead">トレーニングの話と、AI社員との仕事の話を書いています。</p>
+<div class="links">
+<a class="link" href="https://www.instagram.com/takara.0710/" rel="noopener"><div class="card">
+<h3>Instagram</h3><p>体の話を、短い表と動画で。</p><span>@takara.0710</span></div></a>
+<a class="link" href="https://hitori-ai-log.hatenablog.com/" rel="noopener"><div class="card">
+<h3>ひとりAIログ</h3><p>AIに任せた失敗と直し方の記録。</p><span>ブログを読む</span></div></a>
+</div>
 </div></section>
 </main>
-<footer><div class="wrap">試しのページ（検索には出ない設定）</div></footer>
+
+<footer><div class="wrap">© TAKARA　／　写真はイメージです</div></footer>
+<script>
+document.getElementById('copy').addEventListener('click', function(){
+  var t = document.getElementById('dm').textContent, b = this;
+  function done(){ b.textContent = 'コピーしました'; setTimeout(function(){ b.textContent = '4行をコピーする'; }, 1800); }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(t).then(done).catch(function(){ sel(); });
+  } else { sel(); }
+  function sel(){ var r = document.createRange(); r.selectNodeContents(document.getElementById('dm'));
+    var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+});
+</script>
 </body>
 </html>
